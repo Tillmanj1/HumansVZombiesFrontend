@@ -1,19 +1,12 @@
 <template>
   <div id="app">
     <img alt="hvz logo" src="./assets/hvzlogo.png">
-    <HelloWorld msg="Welcome to Humans vs. Zombies!!!"/>
+    <h1>Welcome to Humans vs. Zombies !!!</h1>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>

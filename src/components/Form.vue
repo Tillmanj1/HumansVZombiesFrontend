@@ -1,7 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <form method = "post"> Username: <input type = "text" name= "UserName">
+  <div class="form">
+
+     
+
+    <p> Please login below:</p>
+    
+    <form method = "post" action="models/Users.js"> 
+      Username: <input type = "text" name= "UserName">
     <p>
       Password: <input type= "text" name = "myPass">
     </p>
@@ -12,9 +17,9 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'form',
+  components: {
+    
   }
 }
 </script>
