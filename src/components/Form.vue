@@ -1,25 +1,31 @@
 <template>
   <div class="form">
 
-     
+     <br>
 
     <p> Please login below:</p>
     
-    <form method = "post" action="models/Users.js"> 
-      Username: <input type = "text" name= "UserName">
+    <form method = "post" action="models/Users.js">
+      <label for="email"> Email: </label> 
+      <input type = "text" id= "email">
     <p>
-      Password: <input type= "text" name = "myPass">
+      <label for="pass"> Password: </label>
+      <input type= "text" id = "myPass">
     </p>
     <input type = "submit" value = "Enter">
     </form>
+    
+    <br>
+
+    <router-link to = "/register"> I don't have an account</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'form',
-  components: {
-    
+  name: 'Form',
+  props: {
+    msg: String
   }
 }
 </script>
